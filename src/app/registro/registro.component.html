@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="form-group">
+    <label for="nombres">Nombres:</label>
+    <input type="text" [(ngModel)]="this.usuario.nombres" class="form-control" id="nombres" aria-describedby="emailHelp"
+      placeholder="Ingrese su nombre">
+  </div>
+  <div class="form-group">
+    <label for="apellidos">Apellidos:</label>
+    <input type="text" [(ngModel)]="this.usuario.apellidos" class="form-control" id="apellidos"
+      aria-describedby="emailHelp" placeholder="Ingrese su apellido">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Estado Civil:</label>
+    <select [(ngModel)]="this.usuario.e_civil" class="form-control" id="exampleFormControlSelect1">
+      <option>Soltero/a</option>
+      <option>Casado/a</option>
+      <option>Divorciado/a</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="edad">Edad:</label>
+    <input [(ngModel)]="this.usuario.edad" type="number" class="form-control" id="edad" aria-describedby="emailHelp"
+      placeholder="Ingrese su edad">
+  </div>
+  <label for="correo">Correo:</label>
+  <input [(ngModel)]="this.usuario.correo" id="correo" class="form-control" type="text" placeholder="correo" readonly>
+  <div class="form-group">
+    <label for="celular">Celular:</label>
+    <input [(ngModel)]="this.usuario.celular" type="text" class="form-control" id="celular" aria-describedby="emailHelp"
+      placeholder="Ingrese su celular">
+  </div>
+  <div class="form-group">
+    <label for="direccion">Direccion:</label>
+    <input [(ngModel)]="this.usuario.direccion" type="text" class="form-control" id="direccion"
+      aria-describedby="emailHelp" placeholder="Ingrese su direccion">
+  </div>
+  <div class="form-group">
+    <label for="nacionalidad">Nacionalidad:</label>
+    <input [(ngModel)]="this.usuario.nacionalidad" type="text" class="form-control" id="nacionalidad"
+      aria-describedby="emailHelp" placeholder="Ingrese su nacionalidad">
+  </div>
+  <div class="form-group">
+    <label for="ci">CI:</label>
+    <input [(ngModel)]="this.usuario.ci" type="text" class="form-control" id="ci" aria-describedby="emailHelp"
+      placeholder="Ingrese su CI">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Clave:</label>
+    <input [(ngModel)]="this.usuario.clave" type="password" class="form-control" id="exampleInputPassword1"
+      placeholder="Password">
+  </div>
+  <button (click)="registrarUsuario()" class="btn btn-primary">Registrarse</button>
+</div>

@@ -1,0 +1,29 @@
+<!-- Carta -->
+<div class="card highlight-card card-small">
+
+  <p>Registro de Cuenta En Linea</p>
+
+</div>
+
+<!-- Registro -->
+<h2>Registro</h2>
+<p>Para empezar el registro primero debe introducir una direccion de correo electronico:</p>
+
+<div class="card-container">
+  <input type="email" class="correo" name="correo" id="correo" [(ngModel)]="correo" required>
+</div>
+<div class="card-container">
+  <button class="card" (click)="enviarCorreo()">
+    <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+      <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+    </svg>
+    <span>Empezar Registro</span>
+    <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+    </svg>
+  </button>
+
+</div>
+<div *ngIf="this.error" class="alert alert-danger" role="alert">
+  {{this.error}}
+</div>

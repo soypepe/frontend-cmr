@@ -1,13 +1,16 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { RestApiService } from './shared/rest-api.service';
+import { Component, OnInit } from '@angular/core';
+import { RestApiService } from '../shared/rest-api.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-solicitar',
+  templateUrl: './solicitar.component.html',
+  styleUrls: ['./solicitar.component.css']
 })
-export class AppComponent {
-  title = 'frontend-cmr';
+export class SolicitarComponent implements OnInit {
+
+  ngOnInit(): void {
+  }
+
   correo = ''
   error!: string
   correcto!: string
@@ -22,4 +25,5 @@ export class AppComponent {
       })
     }
   }
+
 }
